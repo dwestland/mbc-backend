@@ -23,34 +23,37 @@
     },
     "url": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "\"\""
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "default": "\"\""
     },
     "country": {
       "type": "string",
       "required": true
     },
     "state": {
-      "type": "string"
+      "type": "string",
+      "default": "\"\""
     },
     "area": {
-      "type": "string"
+      "type": "string",
+      "default": "\"\""
     },
     "sub_area": {
-      "type": "string"
+      "type": "string",
+      "default": "\"\""
     },
     "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "user": {
