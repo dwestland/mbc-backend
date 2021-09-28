@@ -60,6 +60,9 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "cams"
+    },
+    "old_image_url": {
+      "type": "string"
     }
   }
 }

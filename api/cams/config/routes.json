@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/cams/me",
+      "handler": "cams.me",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/cams/count",
       "handler": "cams.count",
       "config": {
