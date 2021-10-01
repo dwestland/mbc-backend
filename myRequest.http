@@ -1,0 +1,25 @@
+///////////////// Backend Strapi API /////////////////////
+
+# boom11 ID# 1614 slug: boom11
+# aaa ID# 1612 slug: aaa
+
+### Get token
+POST http://localhost:1337/auth/local HTTP/1.1
+Content-Type: application/json
+
+{
+"identifier": "don@westland.net",
+"password": "Password1"
+}
+
+### Get user cams
+GET http://localhost:1337/cams/me/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjMyODg3OTUwLCJleHAiOjE2MzU0Nzk5NTB9.hKFRPqpdHF6h188VFbky98S6QdUaPKMt4ntynSEzS8Q
+
+### Edit cam
+PUT http://localhost:1337/cams/1599 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjMyODg3OTUwLCJleHAiOjE2MzU0Nzk5NTB9.hKFRPqpdHF6h188VFbky98S6QdUaPKMt4ntynSEzS8Q
+Content-Type: application/x-www-form-urlencoded
+
+state=AZ&area=Phoenix
+#
